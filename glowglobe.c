@@ -13,8 +13,7 @@ const int TOTAL_RINGS = 5;
 
 void exitOnHandle(int signum) {
     // Turn off all PIGlow Leds.
-    int i;
-    for (i = 0; i < TOTAL_RINGS; ++i) {
+    for (int i = 0; i < TOTAL_RINGS; ++i) {
 	piGlowRing(i, 0);
     }
     exit(0);
